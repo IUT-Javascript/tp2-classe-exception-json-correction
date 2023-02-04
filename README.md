@@ -1,8 +1,4 @@
-## Classe
-
-## Exception
-
-## JSON
+## Classe, Exception et JSON
 
 - Les classes en JavaScript
   - https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Classes
