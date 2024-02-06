@@ -46,21 +46,9 @@
     <script src="./src/view/article-html.js"></script>
     <script src="./src/service/article-service.js"></script>
 
-    <script src="./src/html-article.js"></script>
-    <script src="./src/form-article.js"></script>
-    <script>
-        const articleService = new ArticleService();
-        articleService.loadArticlesFromJson(ARTICLES_JSON).forEach(a => {
-            addArticleToHtml(a, '#newsList');
-        });
-        displayArticleCount();
-
-        const form = document.querySelector('form');
-        form.addEventListener('submit', submitForm);
-
-        const exportArticlesButton = document.querySelector('#exportArticles');
-        exportArticlesButton.addEventListener('click', exportArticlesButtonClick);
-    </script>
+    <script src="./src/html/html-article.js"></script>
+    <script src="./src/html/form-article.js"></script>
+    <script src="./src/main .js"></script>
 </body>
 
 </html>
