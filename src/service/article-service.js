@@ -15,6 +15,6 @@ class ArticleService {
     exportArticleToJson(articles) {
         const articlesJson = JSON.stringify(articles);
 
-        console.log(articlesJson);
+        logMessage(articlesJson, 'log');
     }
 }
