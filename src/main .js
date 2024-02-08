@@ -2,7 +2,7 @@ const articleService = new ArticleService();
 articleService.loadArticlesFromJson(ARTICLES_JSON).forEach(a => {
     addArticleToHtml(a, '#newsList');
 });
-displayArticleCount();
+ArticleHtml.displayArticleCount();
 
 const form = document.querySelector('form');
 form.addEventListener('submit', submitForm);

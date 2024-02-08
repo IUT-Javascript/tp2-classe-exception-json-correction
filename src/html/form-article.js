@@ -32,7 +32,7 @@ function submitForm(event) {
 
     addArticleToHtml(article, '#newsList');
 
-    displayArticleCount();
+    ArticleHtml.displayArticleCount();
 
     form.querySelector('input[name=titleToAdd]').value = '';
     form.querySelector('textarea[name=descriptionToAdd]').value = '';
