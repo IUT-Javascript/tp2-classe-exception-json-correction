@@ -23,6 +23,11 @@ function resetError() {
     errorForm.innerHtml = '';
 }
 
+function resetForm(form){
+    form.querySelector('input[name=titleToAdd]').value = '';
+    form.querySelector('textarea[name=descriptionToAdd]').value = '';
+}
+
 function submitForm(event) {
     event.preventDefault(); //permet de bloquer le rechargement de la page à la validation du formulaire
     const article = checkForm();
@@ -34,8 +39,7 @@ function submitForm(event) {
 
     ArticleHtml.displayArticleCount();
 
-    form.querySelector('input[name=titleToAdd]').value = '';
-    form.querySelector('textarea[name=descriptionToAdd]').value = '';
+    resetForm(form);
 
     return false; //permet de bloquer le rechargement de la page à la validation du formulaire
 }

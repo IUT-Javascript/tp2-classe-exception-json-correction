@@ -4,11 +4,11 @@ class Article {
     description;
 
     constructor(id, title, description) {
-        if (!title) {
+        if (!title || title.trim() === '') {
             throw new RequiredFieldError('title'); //l'instruction throw permet de déclencher une erreur
         }
 
-        if (!description) {
+        if (!description || description.trim() === '') {
             throw new RequiredFieldError('description'); //l'instruction throw permet de déclencher une erreur
         }
 

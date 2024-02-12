@@ -12,7 +12,7 @@ class ArticleHtml {
 
         span.innerText = this.article.title;
         p.innerText = this.article.description;
-        articleHtml.dataset.id = this.article.id; //l'attribut dataseet permet d'accéder (en lecture et écriture) aux attributs HTML data-*
+        articleHtml.dataset.id = this.article.id; //l'attribut dataset permet d'accéder (en lecture et écriture) aux attributs HTML data-*
         articleHtml.appendChild(span);
         articleHtml.appendChild(p);
         articleHtml.classList.add('article'); //article.setAttribute('class', 'article');
